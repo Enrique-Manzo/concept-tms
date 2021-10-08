@@ -15,14 +15,31 @@
   <body>
     <header>
       <nav>
-        <p class="logo"><a href="index.html">FlowApp</a></p>
-        <ul class="list-flex">
-          <li class="list-item"><a href="index.html">Home</a></li>
-          <li class="list-item"><a href="solutions.html">Solutions</a></li>
-          <li class="list-item"><a href="pricing.html">Pricing</a></li>
-          <li class="list-item"><a href="contact.html">Contact</a></li>
-          <p class="main-button"><a href="create-account.html">Get started</a></p>
-        </ul>
+        <!-- mobile navbar that's hidden by default -->
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a href="modules.html">Modules</a></li>
+            <li class="list-item"><a href="pricing.html">Pricing</a></li>
+            <li class="list-item"><a href="contact.html">Contact</a></li>
+            <p class="main-button"><a href="create-account.html">Get started</a></p>
+          </ul>
+        </div>
+        <!-- desktop navigation bar, hidden on small screens -->
+        <div class="desktop-navbar navbar">
+          <p class="logo"><a href="index.html">FlowApp</a></p>
+          <ul class="list-flex">
+            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a href="modules.html">Modules</a></li>
+            <li class="list-item"><a href="pricing.html">Pricing</a></li>
+            <li class="list-item"><a href="contact.html">Contact</a></li>
+            <p class="main-button"><a href="create-account.html">Get started</a></p>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
