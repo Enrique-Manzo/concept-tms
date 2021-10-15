@@ -8,36 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
-    <title>FlowApp | Pricing</title>
+    <title>FlowApp | Contact</title>
   </head>
   <body>
     <header>
-      <nav>
-        <!-- mobile navbar that's hidden by default -->
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
-            <li class="list-item"><a href="index.html">Home</a></li>
-            <li class="list-item"><a href="modules.html">Modules</a></li>
-            <li class="list-item"><a href="pricing.html">Pricing</a></li>
-            <li class="list-item"><a href="contact.html">Contact</a></li>
-            <p class="main-button"><a href="create-account.html">Get started</a></p>
-          </ul>
-        </div>
-        <!-- desktop navigation bar, hidden on small screens -->
-        <div class="desktop-navbar navbar">
-          <p class="logo"><a href="index.html">FlowApp</a></p>
-          <ul class="list-flex">
-            <li class="list-item"><a href="index.html">Home</a></li>
-            <li class="list-item"><a href="modules.html">Modules</a></li>
-            <li class="list-item"><a href="pricing.html">Pricing</a></li>
-            <li class="list-item"><a href="contact.html">Contact</a></li>
-            <p class="main-button"><a href="create-account.html">Get started</a></p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo" href="#">FlowApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-items-right" id="navbarNav">
+          <ul class="row-end nav navbar-nav ml-auto">
+            <li class="nav-item active list-item">
+              <a href="index.html" class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item list-item">
+              <a href="modules.html" class="nav-link" href="#">Modules</a>
+            </li>
+            <li class="nav-item list-item">
+              <a href="pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item list-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <p class="main-button"><a href="create-account.html">Get started</a></p>
+            </li>
           </ul>
         </div>
       </nav>
@@ -49,15 +48,19 @@
           <p>Gain more control over the features that you need. Inquire About
           customized plans for your company.</p>
         </div>
-        <div class="two-columns-margins">
-          <div class="boxed-text left-to-right">
-            <h3>You are about to give a big step</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.</p>
+
+
+
+          <div class="two-columns pd-left-100 pd-right-100 gap-50 mg-top-50px mg-bottom-50px">
+            <div class="boxed-text left-to-right">
+              <h3>You are about to give a big step</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            </div>
+              <img class="character-3 rounded" src="resources/pricing1.jpg" alt="">
           </div>
-            <img class="character-3" src="resources/pricing1.jpg" alt="">
-        </div>
+        
       </section>
       <section>
         <div class="cards-pricing">
@@ -74,10 +77,10 @@
             </div>
             <div>
               <ul class="basic-list">
-                <li class="list-item-margin">✓ Full project management module</li>
-                <li class="list-item-margin">✓ Job automation</li>
-                <li class="list-item-margin">✓ Job tenders</li>
-                <li class="list-item-margin">✓ Automatic vendor selection</li>
+                <li class="mg-top-10">✓ Full project management module</li>
+                <li class="mg-top-10">✓ Job automation</li>
+                <li class="mg-top-10">✓ Job tenders</li>
+                <li class="mg-top-10">✓ Automatic vendor selection</li>
               </ul>
             </div>
           </div>
@@ -94,10 +97,10 @@
             </div>
             <div>
               <ul class="basic-list">
-                <li class="list-item-margin">✓ All basic benefits plus...</li>
-                <li class="list-item-margin">✓ Financial module</li>
-                <li class="list-item-margin">✓ Word count for all languages</li>
-                <li class="list-item-margin">✓ Intergration with ProZ.com</li>
+                <li class="mg-top-10">✓ All basic benefits plus...</li>
+                <li class="mg-top-10">✓ Financial module</li>
+                <li class="mg-top-10">✓ Word count for all languages</li>
+                <li class="mg-top-10">✓ Intergration with ProZ.com</li>
               </ul>
             </div>
           </div>
@@ -114,17 +117,17 @@
             </div>
             <div>
               <ul class="basic-list">
-                <li class="list-item-margin">✓ Built-in machine translation</li>
-                <li class="list-item-margin">✓ Unlimited users</li>
-                <li class="list-item-margin">✓ Client portal customization</li>
-                <li class="list-item-margin">✓ Unlimited users</li>
+                <li class="mg-top-10">✓ Built-in machine translation</li>
+                <li class="mg-top-10">✓ Unlimited users</li>
+                <li class="mg-top-10">✓ Client portal customization</li>
+                <li class="mg-top-10">✓ Unlimited users</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="two-columns-margins">
+        <div class="two-columns pd-left-100 pd-right-100 gap-50 mg-top-100 mg-bottom-50">
           <div class="one-column">
             <div>
               <h4>Do you offer discounts for non-profits?</h4>
@@ -168,7 +171,7 @@
         </div>
       </section>
       <section>
-        <div class="one-row-centered">
+        <div class="one-column-flex mg-bottom-100">
           <div class="card-promo-item">
             <div class="">
               <h2 class="white-font">Need more information to make a decision?</h2>
@@ -216,7 +219,9 @@
           <p class="main-button"><a href="create-account.html">Log in</a></p>
         </div>
       </div>
-      <hr>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
