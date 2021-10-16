@@ -741,6 +741,7 @@ h3 {
   gap: 40px; }
 
 .one-column-flex {
+  /* used for centering titles mostly */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -752,6 +753,12 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 20px; }
+
+.two-columns-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; }
 
 .rows-10px {
   display: grid;
@@ -818,13 +825,23 @@ h3 {
   grid-template-rows: auto;
   justify-items: center; }
 
+.rows-flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.two-rows {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px; }
+
 .rows-space-around {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 100px; }
 
-.one-row-centered-no-mg {
+.arrow-location {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -833,23 +850,24 @@ h3 {
   margin-bottom: 100px;
   padding: 0; }
 
-.two-rows {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px; }
+/* ------------------- WIDTHS AND HEIGHTS ------------------- */
+.height-15 {
+  height: 15rem; }
 
-.lined-CTA {
-  padding: 0 50px 0 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center; }
+.width-12 {
+  width: 12rem; }
 
-.narrow-text {
-  width: 400px; }
+.width-20 {
+  width: 20rem; }
 
-.width-narrow {
-  width: 400px; }
+.width-25 {
+  width: 25rem; }
+
+.width-100pc {
+  width: 100%; }
+
+.width-300 {
+  width: 300px; }
 
 /* ------------------- IMAGES ------------------- */
 .brand-logo-image {
@@ -859,33 +877,20 @@ h3 {
   transform: scale(1.2, 1.2);
   transition: 0.3s; }
 
-.main-promo-image {
-  width: 400px; }
-
-.main-promo-text {
-  padding: 0 50px 0 50px;
-  margin-bottom: 50px; }
-
 .testimonial-image {
   border-radius: 100%;
   width: 100px; }
 
-.character-1 {
+.shape-1 {
   width: 325px;
   height: 300px;
   object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 
-.character-2 {
-  width: 400px; }
-
-.character-3 {
+.shape-2 {
   object-fit: cover;
-  width: 325px;
-  height: 250px; }
-
-.card__img {
-  width: 200px; }
+  width: 20rem;
+  height: 15rem; }
 
 /* ------------------- DECORATIONS ------------------- */
 .arrow-side-1 {
@@ -945,16 +950,6 @@ h3 {
   text-decoration: underline; }
 
 /**************** CARDS ****************/
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.cards-pricing {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 .card-features {
   position: relative;
   width: 320px;
@@ -1022,19 +1017,6 @@ h3 {
   background-color: #85C1E9;
   margin-top: 50px; }
 
-.card-story {
-  width: 70%;
-  padding: 50px 30px 50px 30px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: grid;
-  grid-template-columns: 12% 88%;
-  align-items: center;
-  justify-items: left;
-  background-color: WhiteSmoke;
-  margin-top: 50px; }
-
 /* ------------------- FORMS STYLES ------------------- */
 input {
   border: 1.5px solid lightgray;
@@ -1044,12 +1026,6 @@ input {
 input::placeholder {
   font-size: 1.2em;
   overflow: visible; }
-
-.full-width-input {
-  width: 100%; }
-
-.index-input {
-  width: 300px; }
 
 .column-start {
   display: flex;
@@ -1150,11 +1126,6 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  width: 90%; }
-
 /* ------------------- RESPONSIVE ------------------- */
 @media (max-width: 590px) {
   .card-testimonial {
@@ -1179,9 +1150,6 @@ hr {
 @media (max-width: 65rem) {
   .desktop-navbar {
     display: none; }
-  .two-columns {
-    grid-template-columns: 1fr;
-    justify-items: center; }
   .centered-responsive-only {
     display: flex;
     flex-direction: column;
@@ -1194,7 +1162,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  .cards {
+  .rows-flex-center {
     flex-direction: column;
     justify-items: center;
     margin-left: 0;
@@ -1212,16 +1180,6 @@ hr {
     margin-left: 0;
     margin-right: 0;
     text-align: center; }
-  .two-columns-margins {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    gap: 50px;
-    margin-left: 10px;
-    margin-right: 10px; }
   .item-one, .item-two, .item-three, .item-four {
     font-size: 12px; }
   .colourful-tiles {
@@ -1245,10 +1203,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px; }
-  .cards-pricing {
-    flex-direction: column;
-    align-items: center; } }
+    padding-bottom: 100px; } }
 
 /* ------------------- ANIMATIONS ------------------- */
 .left-to-right {
