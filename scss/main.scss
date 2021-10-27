@@ -294,6 +294,11 @@ h3 {
   gap: 20px;
 }
 
+.two-columns-image {
+  @extend .two-columns;
+  grid-template-columns: 2fr 1fr;
+}
+
 .two-columns-flex {
   display: flex;
   flex-direction: row;
@@ -763,9 +768,62 @@ footer {
   padding-bottom: 20px;
 }
 
+
+
 /* ------------------- RESPONSIVE ------------------- */
 
-@media (max-width: 590px) {
+@media screen and (max-width: 380px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .width-25 {
+    width: 80%;
+  }
+
+  .rows-space-around {
+    flex-direction: column;
+  }
+
+  .index-bottom-elements {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promo-image-index {
+    margin-top: 100px;
+  }
+
+  .header-bar-index {
+    height: 600px;
+  }
+
+  .stretch {
+    align-self: stretch;
+  }
+
+  .two-columns-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .one-column-form {
+    width: 100%;
+  }
+
+  .width-100pc {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 590px) {
   .card-testimonial {
     grid-template-columns: none;
     grid-template-rows: auto;
@@ -774,10 +832,6 @@ footer {
     gap: 10px;
     width: auto;
     height: auto;
-  }
-
-  .promo-image-index {
-    display: none;
   }
 
   .container {
@@ -801,11 +855,11 @@ footer {
   }
 
   .one-column-form {
-    width: 80%;
+    width: 100%;
   }
 
   .one-column-form .width-100pc {
-    width: 50%;
+    width: 100%;
     align-self: center;
   }
 
@@ -822,10 +876,22 @@ footer {
     justify-content: center;
   }
 
-  .one-column-form .textarea {
-    width: 60%;
+  .login-box {
+    padding-left: 0;
+    padding-right: 0;
   }
 
+  .help-items {
+    flex-direction: column;
+  }
+
+  .remember-me {
+    justify-content: flex-start;
+  }
+
+  .login-box a .width-25 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -885,8 +951,6 @@ footer {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 50px;
-    margin-left: 0;
-    margin-right: 0;
     text-align: center;
   }
 
@@ -908,7 +972,6 @@ footer {
   }
 
   .rows-space-around {
-    width: 400px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-items: center;
@@ -925,6 +988,8 @@ footer {
     align-items: center;
     padding-bottom: 100px;
   }
+
+  
 
 }
 
