@@ -45,6 +45,13 @@ header {
   margin-right: 50px;
 }
 
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar-items-right {
+  margin-right: 15%;
+}
 
 p {
   font-family: sans-serif;
@@ -258,6 +265,11 @@ h3 {
   background-color: $yellow;
 }
 
+.yellow-cta-absolute {
+  @extend .learn-more-button;
+  position: absolute;
+}
+
 
 /* ------------------- CONTAINERS ------------------- */
 
@@ -336,6 +348,14 @@ h3 {
   padding: 0;
 }
 
+.index-bottom-elements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
 /* ------------------- WIDTHS AND HEIGHTS ------------------- */
 
 .height-15 {
@@ -389,6 +409,12 @@ h3 {
   object-fit: cover;
   width: 20rem;
   height: 15rem;
+}
+
+.promo-image-index {
+  width: 200px;
+  margin-top: -30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ------------------- DECORATIONS ------------------- */
@@ -447,6 +473,12 @@ h3 {
   height: 100px;
 }
 
+.header-bar-index {
+  width: 100%;
+  background-color: $main_green;
+  height: 300px;
+}
+
 .boxed-text {
   border: dotted 2px black;
   padding-left: 10px;
@@ -455,6 +487,11 @@ h3 {
 
 .underlined-text {
   text-decoration: underline;
+}
+
+.quotation-mark {
+  width: 100px;
+  margin-top: -50px;
 }
 
 /**************** CARDS ****************/
@@ -521,6 +558,13 @@ h3 {
   transform: translateX(10px);
 }
 
+.card-testimonial-large {
+  border: solid lightgray 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 900px;
+  border-radius: 5px;
+}
+
 .card-promo-item {
   width: 70%;
   padding: 50px 30px 50px 30px;
@@ -580,6 +624,10 @@ input::placeholder {
   color: #acacac;
 }
 
+.no-border {
+  border: none;
+}
+
 .larger-input input:focus {
   outline: none;
 }
@@ -589,6 +637,7 @@ label {
 }
 
 textarea {
+  border: 1.5px solid lightgray;
   border-radius: 8px;
   padding: 13px 10px 13px 10px;
   width: 32rem;
@@ -615,6 +664,50 @@ select {
 .one-row-mail {
   display: flex;
   width: 100%;
+}
+
+/* ------------------- LOGIN BOX ------------------- */
+
+.login-box {
+  border: solid lightgray 1px;
+  width: 900px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding: 50px;
+}
+
+.login-form {
+  @extend .one-column-flex;
+  gap: 20px;
+}
+
+.help-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-button-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.login-button-login:hover {
+  background-color: #D4AC0D;
+  color: white;
 }
 
 /* ------------------- COLOURFUL TILES ------------------- */
@@ -681,6 +774,56 @@ footer {
     gap: 10px;
     width: auto;
     height: auto;
+  }
+
+  .promo-image-index {
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .index-bottom-elements-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .login-box {
+    width: 90%
+  }
+
+  .same-line-fields {
+    flex-direction: column;
+  }
+
+  .one-column-form {
+    width: 80%;
+  }
+
+  .one-column-form .width-100pc {
+    width: 50%;
+    align-self: center;
+  }
+
+  .identity-form-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .one-column-form .row-start {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .one-column-form .textarea {
+    width: 60%;
   }
 
 }

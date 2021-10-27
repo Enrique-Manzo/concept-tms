@@ -25,6 +25,12 @@ header {
   justify-content: flex-end;
   margin-right: 50px; }
 
+.nav-link {
+  font-weight: bold; }
+
+.navbar-items-right {
+  margin-right: 15%; }
+
 p {
   font-family: sans-serif;
   line-height: 1.6; }
@@ -726,7 +732,7 @@ h3 {
 .create-account-button:hover {
   box-shadow: 0 0 11px #d1d1d1; }
 
-.learn-more-button {
+.learn-more-button, .yellow-cta-absolute {
   border-radius: 3px;
   padding: 10px 20px 10px 20px;
   font-family: "Lato", sans-serif;
@@ -734,13 +740,16 @@ h3 {
   font-size: 1em;
   background-color: #F4D03F; }
 
+.yellow-cta-absolute {
+  position: absolute; }
+
 /* ------------------- CONTAINERS ------------------- */
 .one-column {
   display: grid;
   grid-template-columns: auto;
   gap: 40px; }
 
-.one-column-flex {
+.one-column-flex, .login-form {
   /* used for centering titles mostly */
   display: flex;
   flex-direction: column;
@@ -850,6 +859,12 @@ h3 {
   margin-bottom: 100px;
   padding: 0; }
 
+.index-bottom-elements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+
 /* ------------------- WIDTHS AND HEIGHTS ------------------- */
 .height-15 {
   height: 15rem; }
@@ -891,6 +906,11 @@ h3 {
   object-fit: cover;
   width: 20rem;
   height: 15rem; }
+
+.promo-image-index {
+  width: 200px;
+  margin-top: -30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /* ------------------- DECORATIONS ------------------- */
 .arrow-side-1 {
@@ -941,6 +961,11 @@ h3 {
   background-color: white;
   height: 100px; }
 
+.header-bar-index {
+  width: 100%;
+  background-color: #76D7C4;
+  height: 300px; }
+
 .boxed-text {
   border: dotted 2px black;
   padding-left: 10px;
@@ -948,6 +973,10 @@ h3 {
 
 .underlined-text {
   text-decoration: underline; }
+
+.quotation-mark {
+  width: 100px;
+  margin-top: -50px; }
 
 /**************** CARDS ****************/
 .card-features {
@@ -1005,6 +1034,12 @@ h3 {
 .card-testimonial:hover {
   transform: translateX(10px); }
 
+.card-testimonial-large {
+  border: solid lightgray 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 900px;
+  border-radius: 5px; }
+
 .card-promo-item {
   width: 70%;
   padding: 50px 30px 50px 30px;
@@ -1055,6 +1090,9 @@ input::placeholder {
   padding-left: 15px;
   color: #acacac; }
 
+.no-border {
+  border: none; }
+
 .larger-input input:focus {
   outline: none; }
 
@@ -1062,6 +1100,7 @@ label {
   font-family: sans-serif; }
 
 textarea {
+  border: 1.5px solid lightgray;
   border-radius: 8px;
   padding: 13px 10px 13px 10px;
   width: 32rem; }
@@ -1084,6 +1123,42 @@ select {
 .one-row-mail {
   display: flex;
   width: 100%; }
+
+/* ------------------- LOGIN BOX ------------------- */
+.login-box {
+  border: solid lightgray 1px;
+  width: 900px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding: 50px; }
+
+.login-form {
+  gap: 20px; }
+
+.help-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px; }
+
+.login-button-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center; }
+
+.login-button-login:hover {
+  background-color: #D4AC0D;
+  color: white; }
 
 /* ------------------- COLOURFUL TILES ------------------- */
 .colourful-tiles {
@@ -1135,7 +1210,37 @@ footer {
     justify-content: center;
     gap: 10px;
     width: auto;
-    height: auto; } }
+    height: auto; }
+  .promo-image-index {
+    display: none; }
+  .container {
+    width: 80%; }
+  .index-bottom-elements-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%; }
+  .login-box {
+    width: 90%; }
+  .same-line-fields {
+    flex-direction: column; }
+  .one-column-form {
+    width: 80%; }
+  .one-column-form .width-100pc {
+    width: 50%;
+    align-self: center; }
+  .identity-form-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .one-column-form .row-start {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center; }
+  .one-column-form .textarea {
+    width: 60%; } }
 
 @media (max-width: 1000px) {
   .row-end {
