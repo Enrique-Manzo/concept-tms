@@ -64,6 +64,9 @@ h3 {
 .white-font {
   color: white; }
 
+.black-font {
+  color: black; }
+
 .green-font {
   color: #76D7C4; }
 
@@ -666,6 +669,12 @@ h3 {
 .pd-right-100 {
   padding-right: 100px; }
 
+.pd-left-20 {
+  padding-left: 20px; }
+
+.pd-right-20 {
+  padding-right: 20px; }
+
 /* ------------------- LIST STYLES ------------------- */
 .basic-list {
   list-style: none;
@@ -884,6 +893,9 @@ h3 {
 .width-100pc {
   width: 100%; }
 
+.width-80pc {
+  width: 80%; }
+
 .width-300 {
   width: 300px; }
 
@@ -1040,7 +1052,7 @@ h3 {
 .card-testimonial-large {
   border: solid lightgray 1px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 900px;
+  width: 70%;
   border-radius: 5px; }
 
 .card-promo-item {
@@ -1205,9 +1217,15 @@ footer {
   padding-bottom: 20px; }
 
 /* ------------------- RESPONSIVE ------------------- */
+@media screen and (max-width: 320px) {
+  .card-pricing, .card-pricing-highlighted {
+    width: 80%; }
+  .shape-2 {
+    width: 300px; }
+  .card-promo-item {
+    width: 300px; } }
+
 @media screen and (max-width: 380px) {
-  .logo {
-    font-size: 2rem; }
   .width-25 {
     width: 80%; }
   .rows-space-around {
@@ -1228,8 +1246,32 @@ footer {
   textarea {
     width: 100%; }
   .one-column-form {
-    width: 100%; }
-  .width-100pc {
+    width: 100%; } }
+
+@media screen and (max-width: 412px) {
+  .logo {
+    font-size: 1.5rem; }
+  .width-25 {
+    width: 300px; }
+  .two-columns-flex {
+    flex-direction: column;
+    gap: 10px; }
+  .index-bottom-elements {
+    flex-direction: column;
+    gap: 10px; }
+  .shape-1 {
+    width: 250px; }
+  .yellow-cta-absolute {
+    position: relative; }
+  .arrow-side-1 {
+    height: 37.4px;
+    width: 125px;
+    transform: rotate(45deg); }
+  .arrow-side-2 {
+    height: 37.5px;
+    width: 125px;
+    transform: rotate(320deg); }
+  textarea {
     width: 100%; } }
 
 @media screen and (max-width: 590px) {
@@ -1241,8 +1283,6 @@ footer {
     gap: 10px;
     width: auto;
     height: auto; }
-  .container {
-    width: 80%; }
   .index-bottom-elements-text {
     display: flex;
     flex-direction: column;
@@ -1275,7 +1315,35 @@ footer {
   .remember-me {
     justify-content: flex-start; }
   .login-box a .width-25 {
-    width: 100%; } }
+    width: 100%; }
+  .one-column-form .width-100pc {
+    width: 80%; }
+  .pd-left-100 {
+    padding-left: 50px; }
+  .pd-right-100 {
+    padding-right: 50px; } }
+
+@media screen and (max-width: 768px) {
+  .login-box {
+    width: 90%; }
+  .login-form .larger-input {
+    width: 80%; }
+  .login-form .help-items {
+    width: 80%; }
+  .index-bottom-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center; }
+  .index-bottom-elements-text {
+    padding-top: 20px; }
+  .header-bar-index {
+    height: 600px; }
+  .promo-image-index {
+    margin-top: 100px; }
+  .yellow-cta-absolute {
+    position: relative; } }
 
 @media (max-width: 1000px) {
   .row-end {
@@ -1290,13 +1358,6 @@ footer {
 @media (max-width: 65rem) {
   .desktop-navbar {
     display: none; }
-  .centered-responsive-only {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 30px; }
   .lined-CTA {
     padding: 0 50px 0 50px;
     flex-direction: column;
